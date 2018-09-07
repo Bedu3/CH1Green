@@ -1,0 +1,156 @@
+a{
+  font-family: 'Kosugi Maru', sans-serif;
+  font-size: 18px;
+}
+h2{
+  text-align: center;
+  margin-top: 30px;
+}
+input{
+  width: 700px;
+  height: 35px;
+}
+ul{
+  list-style: none;
+  padding: 0;
+}
+ul li{
+  color: #d6d5da;
+  position: relative;
+  margin-bottom: 10px;
+}
+ul li:hover{
+  color: white;
+  cursor: pointer;
+}
+i{
+  width: 50px;
+  color: white;
+}
+
+/* modulo de clses */
+.logo{
+  width: 200px;
+  left: 10px;
+  margin: 20px;
+}
+.nav{
+  margin-top: 30px;
+  float: right;
+  color: black;
+}
+.menuArriba{
+  background-color: #efefef;
+  font-size: 12px;
+  font-family: verdana;
+  float: right;
+}
+.nav-item{
+  margin-left: 20px;
+}
+.imagenFondo{
+  width: 100%;
+  height: 500px;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  background-image: url("http://www.lancaster.ac.uk/media/lancaster-university/content-assets/images/home-page/ug-open-day-visitors-hero-image.jpg");
+}
+.cuadro{
+  width: 670px;
+  height: 230px;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 10px 10px 10px 10px;
+  text-align: center;
+}
+
+.titulo{
+  font-family: "LexiaRegular",Georgia,serif;
+  text-align: center;
+  color: #ffffff;
+}
+.parrafo{
+  color: #fff;
+  text-align: center;
+}
+.btnlibros{
+  height: 35px;
+  background: #b5121b;
+  color: #fff;
+  border: 1px solid #b5121b;
+  border-radius: 5px 5px 5px 5px;
+  font-weight: bold;
+}
+.btnlibros:hover{
+  background: #9a0f17;
+  border: 1px solid #9a0f17;
+}
+.bg{
+  background-color: #dfdddd;
+}
+.textos{
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+}
+.textoUnder{
+  font-weight: bold;
+}
+.textoUnder:hover{
+  border-bottom: 1px solid rgba(31, 29, 30, 0.44);
+  cursor: pointer;
+
+}
+.textoPost{
+  font-weight: bold;
+}
+.textoPost:hover{
+  border-bottom: 1px solid rgba(31, 29, 30, 0.44);
+  cursor: pointer;
+}
+.imagenMedio:hover{
+  background-color: #e5e5e5;
+  cursor: pointer;
+}
+.welcome{
+  margin-top: 80px;
+}
+.globo{
+  display: inline-block;
+  vertical-align: middle;
+  max-width: 100%;
+  height: auto;
+  margin-top: 80px;
+}
+
+.eventos{
+  width: 100%;
+}
+.eventos:hover{
+  background-color: #d5d1d1;
+  cursor: pointer;
+}
+.textobajo{
+  padding-bottom: 10px;
+  background-color: #d5d1d1;
+}
+.textobajo p {
+  font-family: verdana;
+  color: red;
+  font-size: 16px;
+  margin-left: 10px;
+}
+.futer{
+  background-color: #555656;
+}
+.link h3{
+  font-family: "EffraRegular",Arial,Helvetica,sans-serif;
+  color: white;
+}
+.redes h3{
+  font-family: "EffraRegular",Arial,Helvetica,sans-serif;
+  color: white;
+}
+.fab{
+  width:70px;
+}
