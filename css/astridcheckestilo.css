@@ -1,0 +1,164 @@
+﻿body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+a {
+    color: #131414;
+}
+
+.jumbotron {
+    background-image: url(http://hdqwalls.com/wallpapers/green-planet.jpg);
+    max-width: 100%;
+    height: auto;
+    height: 700px;
+    color: white;
+}
+
+.logo {
+    align-self: flex-start;
+    height: 50px;
+    width: 50px;
+}
+
+.logo2 {
+    display: flex;
+    justify-content: center;
+    padding-top: 60px;
+}
+
+.contenedor2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contenedor1 {
+    display: flex;
+    text-align: center;
+    justify-content: flex-end;
+}
+
+.modelo {
+    display: flex;
+    align-items: flex-end;
+    font-size: 12px;
+}
+
+.nav {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.titulo {
+    font-size: 45px;
+}
+
+.barra {
+    width: 100%;
+}
+
+.texto {
+    color: #272828;
+    font-size: 20px;
+}
+
+.textito {
+    font-size: 14px;
+    color: #247569;
+}
+
+.parrafo {
+    color: #581e7a;
+    font-size: 12px;
+}
+
+.ositos {
+    border-radius: 6px;
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.descubre {
+    border: 1px solid gray;
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 15px;
+    align-items: center;
+    width: 250px;
+    height: 70px;
+}
+
+    .descubre a {
+        text-align: left;
+    }
+
+.jumbotron-fluid {
+    height: 350px;
+    border: 8px;
+}
+
+.titulito {
+    color: #317575;
+}
+
+.carousel img {
+    border-radius: 6px;
+    height: 164px;
+    width: 264px;
+}
+
+.logo2 img {
+    opacity: 0.4;
+    filter: alpha(opacity=30);
+}
+
+.titulito {
+    font-size: 14px;
+    color: chocolate;
+}
+
+.grandis {
+    font-size: 16px;
+    color: gray;
+    padding-top: 0;
+}
+
+.carruselitos {
+    display: flex;
+}
+
+.col-3 h4 {
+    font-size: 18px;
+}
+
+.carruselitos a {
+    color: #247569;
+}
+
+.carruselito {
+    flex-wrap: 50%;
+}
+
+.anfitrion {
+    display: flex;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+    padding-top: 40px;
+    margin-top: 50px;
+}
+
+    .anfitrion h1 {
+        font-size: 25px;
+    }
+
+    .anfitrion button {
+        max-width: auto;
+        max-height: auto;
+    }
+
+    .anfitrion .col-sm-4 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
