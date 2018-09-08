@@ -1,106 +1,21 @@
-/*.mt-0 {
-  margin-top: 0 !important;
-}
-
-.ml-1 {
-  margin-left: ($spacer * .25) !important;
-}
-
-.px-2 {
-  padding-left: ($spacer * .5) !important;
-  padding-right: ($spacer * .5) !important;
-}
-
-.p-3 {
-  padding: $spacer !important;
-}*/
-/*@mixin transform($property) {
-  -webkit-transform: $property;
-      -ms-transform: $property;
-          transform: $property;
-}*/
  
 $marginImgSm: 10px 0;
-
-
-
-
-
-.py-sm-1 {
-	padding-top: (150.00) !important;
-  	padding-bottom: (50.00) !important;
+$FondoUno: #7CB342;
+@mixin photosUno {
+	max-width: 100%;
+	height: 300px;
 }
 
-.px-sm-1 {
-	padding-left: (50.0) !important;
-    padding-right: (50.0) !important;
-}
-
-.py-sm-2 {
-	padding-top: (50.00) !important;
-  	padding-bottom: (50.00) !important;
-}
-
-
-.m-md-1 {
-    margin-right: (-25.00) !important;
-    margin-left: (-25.00) !important;
-}
-
-.m-md-2 {
-	margin-left: (90.00) !important;
-    margin-top: (-65.00) !important;
-}
-
-
-.px-md-1 {
-	padding-left: (25.0) !important;
-    padding-right: (25.0) !important;
-}
-
-.pt-md-1 {
-	padding-top: (25.00)!important;
-}    
-    
-.m-md-3 {   
-    margin-right: (10.00)!important;
-    margin-left: (60.00)!important;
-    margin-top: (00.00)!important; 
-    margin-bottom: (16.00)!important;
-} 
-
-.m-md-4 {
-	margin-left: (150.00)!important;
-}
-
-.p-md-2 {
-	    padding-left: (150.00)!important;
-}
-
-.m-md-5 {
-	margin-left: (180.00)!important;
-	margin-top: (10.00)!important;
-	margin-bottom: (10.00)!important;
-	margin-right: (10.00)!important;
-}
-
-.m-md-6 {
-	margin-left: (-25.00)!important;
-}
-
-.m-lg-7 {
-	    margin: 0px 20px 90px 1000px;
-}
-
-.p-lg-1 {
-	padding: 0 70px;
+@mixin photosDos {
+	max-width: 100%;
+	height: auto;
 }
 
 header {
 	padding-left: 200px;
 	
 	.navbar {
-		background-color: #689F38;
+		background-color: $FondoUno;
 		padding: 0 90px;
 
 		img {
@@ -129,13 +44,16 @@ header {
 	margin-left: 0;
 	margin-right: 0;
 	line-height: 2.2;
-	display: inline;
+
 
 	.kiosko {
-		background-color: #7CB342;
+		background-color: $FondoUno;
 
 		.row {
-			background-color: #7CB342;
+			background-color: $FondoUno;
+			margin-right: -51px;
+			padding: 80px;
+
 			
 			h4, 
 			p {
@@ -148,13 +66,13 @@ header {
 
 			#btn {
 			
-				background-color: #7CB342;
+				background-color: $FondoUno;
 				height: 40px;
 			}
 			
 			.btn {
 				background-color: white;
-				color: #7CB342;
+				color: $FondoUno;
 
 			}
 
@@ -164,7 +82,8 @@ header {
 			}
 			
 			.img-fluid {
-				min-width: 100px;
+				@include photosUno;
+			
 
 			}
 		}
@@ -174,8 +93,8 @@ header {
 	.features {
 
 		.row {
-
-			color: #7CB342;
+			padding: 70px;
+			color: $FondoUno;
 
 			p {
 				font-size: 16px;
@@ -193,8 +112,7 @@ header {
 			}	
 			
 			.img-md-fluid {
-				min-width: 100%;
-				max-height: 25%;
+				@include photosUno;
 			}
 			
 			
@@ -206,7 +124,7 @@ header {
 	.customise {
 
 		.row {
-
+			padding: 70px;
 			color: #7CB342;
 	
 			.list-group-item {
@@ -220,8 +138,8 @@ header {
 			}
 
 			p {
-				font-size: 16px;
-				padding-left: 18px;
+				font-size: 20px;
+				
 			}
 
 			.btn {
@@ -230,8 +148,7 @@ header {
 			}
 
 			.img-fluid {
-				min-width: auto;
-				max-height: 35%;
+				@include photosUno;
 			}
 			
 		}
@@ -241,13 +158,12 @@ header {
     .advanced {
 
     	.row {
-			
+			padding: 70px;
 			color: #7CB342;
 	
 
 			p {
-				font-size: 16px;
-				padding-left: 18px;
+				font-size: 20px;
 			}
 
 
@@ -262,8 +178,7 @@ header {
 			}
 
 			.img-fluid {
-				min-width: 100%;
-				max-height: 27%;
+				@include photosUno;
 			}
 
 		}
@@ -272,12 +187,13 @@ header {
 
     .manage {
 
-    	background-color: rgb(236, 236, 236);
+    	
 
     	.row {
-		
+			background-color: rgb(236, 236, 236);
 			color: #7CB342;
-		
+			margin-right: -51px;
+			padding: 70px;
 
 			p {
 				font-size: 16px;
@@ -290,28 +206,26 @@ header {
     			border-left: 5px solid #689f38;
 			}
 
-			img {
-			padding-top: 50px;
-			}
-
+	
 			#btn-link {
 				color: white;
     			background-color: green;
 			}
 
 			.img-fluid {
-
-				max-height: 35%;
+				@include photosUno;
 			}
 		}
     }
 
     .get {
-    	background-color: #7CB342;
+    	
 
     	.row {
-		
+			background-color: #7CB342;
 			color: #D8EAF9;
+			margin-right: -51px;
+			padding: 70px;
 			
 			p {
 				font-size: 16px;
@@ -323,8 +237,8 @@ header {
 			}
 
 			.img-fluid {
-				min-width: 100%;
-				max-height: 30%;
+				@include photosUno;
+				
 			}
 			
 		}
@@ -335,52 +249,48 @@ header {
     	
     	background-color: rgb(236, 236, 236);
     	
-    	
-    	h3 {
+    	.row {
+    		padding-left: 30px;
+    		background-color: rgb(236, 236, 236);
     		
-    		color: rgb(104, 159, 56); 
-    	}
+    		h3 {
+    			padding-top:30px;
+    			color: rgb(104, 159, 56); 
+    		}
 		
-		.img1 {
-			width: 550px;
-	        height: 450px;
-	        min-width: 100%;
-	        margin: $marginImgSm;
-		}
+
+			.img1 {
+				@include photosDos;
+			
+			}
 	
-		.img2 {
-			width: 290px;
-			height: 180px;
-			margin: $marginImgSm;
+			.img2 {
+				@include photosDos;
 
-		}
+			}
 		
-    	.btn {
-    		background-color: white;
-    		color: #689f38;
-    		margin: $marginImgSm;
-    		padding: 2px 30px;
-    	}
+    		.btn {
+    			background-color: white;
+    			color: #689f38;
+    			margin: $marginImgSm;
+    			padding: 2px 30px;
+    			margin-left: 150px;
+    			margin-bottom: 30px;
+    		}
 
-    	.btn1 {
-    		
-    		
-    	}
-
-    	.btn2 {
-    		   
-    		
-    	}
+        }
     }
 
     .clients {
-		
-		background-color: white;
+
 		
 		.row {
 
+			padding: 20px;
+
     		h3 {
-    			
+    		padding-top: 30px;
+    		padding-left: 40px;	
     		color: rgb(104, 159, 56); 
     		}
 
@@ -388,7 +298,7 @@ header {
     		color: #9e9e9e;
     		}
     		
-    		img {
+    		.marcas {
     		width: 150px;
     		margin: $marginImgSm;
     		height: 45px;		
@@ -398,8 +308,15 @@ header {
 			.imgCli {
 				width: 65px;
     			height: 65px;
+    			border: 0;
 			} 
 			
+			.imgCli2 {
+				width: 65px;
+    			height: 55px;
+    			border: 0;
+			} 
+
 			#pc1 {
 			color: #9e9e9e;
 			font-size: 16px;
@@ -429,7 +346,8 @@ header {
 footer {
 	
 	background-color: #7CB342;
-	
+	margin-right: -51px;
+	padding: 40px;
 	
 	.touch {
 		
@@ -446,6 +364,12 @@ footer {
 			border: none;
 		}
 		
+		.form-group {
+
+			min-width:450px;
+		}
+
+
 		.send {
 		 	
 		 	color: #7CB342;
@@ -491,6 +415,7 @@ footer {
 
 #card-footer {
 	background-color: #689F38;
+	margin-right: -51px;
 
 	.p1 {
 		padding-left: 80px;
