@@ -27,9 +27,6 @@ i{
   width: 50px;
   color: white;
 }
-footer{
-	background-color: #484949;
-}
 
 /* modulo de clses */
 .logo{
@@ -154,15 +151,6 @@ footer{
   font-family: "EffraRegular",Arial,Helvetica,sans-serif;
   color: white;
 }
-.face{
-	margin-left: 5px;
-}
-.face:hover{
-	cursor: pointer;
-}
-.ultimo{
-	color: #ffffff;
-	background: #484949;
-	text-align:center;
-	margin:0px;
+.fab{
+  width:70px;
 }
