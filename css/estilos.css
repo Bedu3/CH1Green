@@ -111,6 +111,9 @@ footer{
   border-bottom: 1px solid rgba(31, 29, 30, 0.44);
   cursor: pointer;
 }
+.imagenMedio{
+  width: 100%;
+}
 .imagenMedio:hover{
   background-color: #e5e5e5;
   cursor: pointer;
